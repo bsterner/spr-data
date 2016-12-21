@@ -16,14 +16,14 @@
 </tr>
 </thead>
 <tbody>
-<c:forEach var="shop" items="${shopList}">
+<c:forEach var="employee" items="${shopList}">
 <tr>
-<td>${shop.id}</td>
-<td>${shop.name}</td>
-<td>${shop.emplNumber}</td>
+<td>${employee.id}</td>
+<td>${employee.name}</td>
+<td>${employee.emplNumber}</td>
 <td>
-<a href="${pageContext.request.contextPath}/shop/edit/${shop.id}.html">Edit</a><br/>
-<a href="${pageContext.request.contextPath}/shop/delete/${shop.id}.html">Delete</a><br/>
+<a href="${pageContext.request.contextPath}/employee/edit/${employee.id}.html">Edit</a><br/>
+<a href="${pageContext.request.contextPath}/employee/delete/${employee.id}.html">Delete</a><br/>
 </td>
 </tr>
 </c:forEach>

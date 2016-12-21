@@ -11,8 +11,8 @@
 <p>
 Welcome to "Shop application".<br/>
 <i>${message}</i><br/>
-<a href="${pageContext.request.contextPath}/shop/create.html">Create a new shop</a><br/>
-<a href="${pageContext.request.contextPath}/shop/list.html">View all shops</a><br/>
+<a href="${pageContext.request.contextPath}/employee/create.html">Create a new employee</a><br/>
+<a href="${pageContext.request.contextPath}/employee/list.html">View all shops</a><br/>
 </p>
 </body>
 </html>

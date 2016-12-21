@@ -9,7 +9,7 @@
 </head>
 <body>
 <h1>New Shop page</h1>
-<form:form method="POST" commandName="shop" action="${pageContext.request.contextPath}/shop/create.html" >
+<form:form method="POST" commandName="employee" action="${pageContext.request.contextPath}/employee/create.html" >
 <table>
 <tbody>
 <tr>
