@@ -20,6 +20,7 @@ import com.spr.init.AppConfig;
 import com.spr.model.Employee;
 import com.spr.repository.EmployeeRepository;
 import lombok.extern.java.Log;
+import org.apache.commons.lang3.RandomUtils;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,6 +29,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import javax.persistence.EntityManager;
+import java.util.List;
 //import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -36,6 +38,7 @@ import javax.persistence.EntityManager;
 @Rollback
 @Log
 public class EmployeeServiceTest {
+
 
     @Autowired
     private EntityManager entityManager;
@@ -79,9 +82,21 @@ public class EmployeeServiceTest {
 
     @Test
     public void repositoryTestFindByEmployeeNumber() {
-        Long empNum = 1238898709L;
-        String employee = employeeRepository.findByEmployeeNumber(empNum);
+        Employee employee = getRandom();
+        employeeRepository.findByEmployeeNumber(employee.getEmplNumber());
         System.out.println(employee);
+    }
+
+    @Test
+    public void repositoryTestFindAll() {
+        List<Employee> employeeList = employeeRepository.findAll();
+    }
+
+    private Employee getRandom() {
+        List<Employee> employeeList = employeeRepository.findAll();
+        Integer randIndex = RandomUtils.nextInt(0, employeeList.size());
+        System.out.println("Chose random index of " + randIndex);
+        return employeeList.get(randIndex);
     }
 
     @Test

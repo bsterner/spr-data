@@ -8,10 +8,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spr-data" />
+        <module name="spring-data-repo-showcase" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="spr-data" target="1.7" />
+      <module name="spring-data-repo-showcase" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

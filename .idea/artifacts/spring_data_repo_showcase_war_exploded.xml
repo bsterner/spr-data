@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="spr-data:war exploded">
-    <output-path>$PROJECT_DIR$/target/dpr-data</output-path>
+  <artifact type="exploded-war" name="spring-data-repo-showcase:war exploded">
+    <output-path>$PROJECT_DIR$/target/spring-data-rep-showcase</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
@@ -42,7 +42,7 @@
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/target/dpr-data/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/target/spring-data-rep-showcase/META-INF/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="spring-data-repo-showcase/web/Web" />
     </root>

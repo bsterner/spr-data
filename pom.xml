@@ -2,8 +2,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>spr-data</groupId>
-    <artifactId>spr-data</artifactId>
+    <groupId>spring-data</groupId>
+    <artifactId>spring-data-repo-showcase</artifactId>
     <packaging>war</packaging>
     <version>0.0.1-SNAPSHOT</version>
     <name>spr-data</name>
@@ -15,7 +15,7 @@
     <!--</parent>-->
 
     <build>
-        <finalName>dpr-data</finalName>
+        <finalName>spring-data-rep-showcase</finalName>
         <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
